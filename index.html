@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konstantinos Nascos | CV</title>
+    <title>Konstantinos Nascos | Fullstack Java Student</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-
+<a id="top"></a>
 <header class="header">
     <nav class="container nav">
-        <a href="#" class="logo">KN</a>
+        <a href="#top" class="logo">KN</a>
         <ul class="nav-links">
             <li><a href="#om-mig">Om mig</a></li>
             <li><a href="#erfarenhet">Erfarenhet</a></li>
@@ -27,10 +27,11 @@
         <div class="hero-text">
             <p class="hero-greeting">Hej, jag heter</p>
             <h1>Konstantinos Nascos</h1>
-            <p class="hero-subtitle">Fullstack Java-student | F.d. Restaurangchef</p>
+            <p class="hero-subtitle">Fullstack Java-student | Karriärbytare</p>
             <p class="hero-description">
-                Karriärbytare med över tio års erfarenhet från restaurangbranschen.
-                Studerar idag Fullstack Java och bygger webblösningar med Java, HTML, CSS och JavaScript.
+                Studerar Fullstack Java vid Chas Academy i Sverige.
+                Fokus på objektorienterad programmering, systemtänk och att bygga
+                stabila applikationer från grunden.
             </p>
             <div class="hero-actions">
                 <a href="assets/cv/ResumeEnglishKostas.pdf" class="btn btn-primary" target="_blank">
@@ -53,12 +54,12 @@
         <div class="about-content">
             <div class="about-text">
                 <p>
-                    Tidigare restaurangarbetare och nuvarande student bosatt i Malmö.
-                    Gift med tre hundar och med ett stort intresse för problemlösning och struktur.
+                    Karriärbytare med över tio års erfarenhet från restaurangbranschen,
+                    idag fullt fokuserad på systemutveckling.
                 </p>
                 <p>
-                    Har bott i flera länder men varit bosatt i Sverige i över femton år.
-                    Flytande i svenska och engelska.
+                    Intresserad av problemlösning, struktur och långsiktigt hållbar kod.
+                    Trivs bäst när jag får förstå hela systemet, inte bara enskilda delar.
                 </p>
             </div>
             <div class="about-interests">
@@ -67,7 +68,7 @@
                     <li>Schack</li>
                     <li>Friluftsliv</li>
                     <li>Badminton</li>
-                    <li>Basenjis</li>
+                    <li>Hundar</li>
                 </ul>
             </div>
         </div>
@@ -80,54 +81,19 @@
         <div class="skills-grid">
             <div class="skill-card">
                 <h3>Java</h3>
-                <p>Grundläggande</p>
+                <p>OOP, SOLID, konsolapplikationer</p>
             </div>
             <div class="skill-card">
                 <h3>HTML & CSS</h3>
-                <p>Grundläggande</p>
+                <p>Responsiva gränssnitt</p>
             </div>
             <div class="skill-card">
                 <h3>JavaScript</h3>
-                <p>Grundläggande</p>
+                <p>Spel, DOM, logik</p>
             </div>
             <div class="skill-card">
-                <h3>Databaser</h3>
-                <p>Grundläggande</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="erfarenhet" class="section experience">
-    <div class="container">
-        <h2 class="section-title">Arbetslivserfarenhet</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <span class="timeline-year">2024 – 2025</span>
-                    <h3>Barchef</h3>
-                    <span class="timeline-company">SOHO</span>
-                    <p>Ansvar för cocktailmenyer, beställningar och visst personalansvar.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <span class="timeline-year">2022 – 2024</span>
-                    <h3>Restaurangchef</h3>
-                    <span class="timeline-company">Kött & Vilt</span>
-                    <p>Personalansvar, schemaläggning, beställningar och vinlista.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-content">
-                    <span class="timeline-year">2018 – 2022</span>
-                    <h3>Biträdande Restaurangchef</h3>
-                    <span class="timeline-company">Siesta</span>
-                    <p>Schema, personalupplärning, vinlista och beställningar.</p>
-                </div>
+                <h3>Git & GitHub</h3>
+                <p>Individuellt och i grupp</p>
             </div>
         </div>
     </div>
@@ -136,20 +102,89 @@
 <section id="projekt" class="section projects">
     <div class="container">
         <h2 class="section-title">Projekt</h2>
-        <p class="section-subtitle">Utvalda projekt från utbildning och egen utveckling</p>
+        <p class="section-subtitle">
+            Projekt byggda under utbildning och egen utveckling
+        </p>
+
         <div class="projects-grid">
-            <div class="project-card project-placeholder">
-                <h3>Game Portal</h3>
+
+            <article class="project-card">
+                <h3>Game Portal – Chess & Tic‑Tac‑Toe</h3>
                 <p>
-                    Webbaserat spelprojekt med schack och framtida spel.
+                    Ett växande projekt där målet är att samla flera spel under samma serverstruktur.
+                    Chess började som huvudprojekt men kompletterades med ett mindre spel
+                    för att bygga upp rätt arkitektur.
                 </p>
-                <a href="https://chess-app-jmlk.onrender.com" target="_blank" class="btn btn-primary">
-                    Live demo
-                </a>
-                <a href="https://github.com/konstantinosnascos" target="_blank" class="btn btn-secondary">
-                    Källkod
-                </a>
-            </div>
+                <p><strong>Teknik:</strong> JavaScript, HTML, CSS</p>
+                <div class="hero-actions">
+                    <a href="https://chess-app-jmlk.onrender.com" target="_blank" class="btn btn-primary">
+                        Live demo
+                    </a>
+                    <a href="https://github.com/konstantinosnascos/ChessApp" target="_blank" class="btn btn-secondary">
+                        Källkod
+                    </a>
+                </div>
+                <p style="margin-top:0.5rem;font-size:0.875rem;color:#64748b;">
+                    Demo kan ta upp till 2 minuter att starta.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h3>Tic‑Tac‑Toe</h3>
+                <p>
+                    Ett mindre spelprojekt skapat för att bryta ner problem
+                    innan vidare arbete med schackapplikationen.
+                </p>
+                <p><strong>Teknik:</strong> JavaScript, HTML, CSS</p>
+                <div class="hero-actions">
+                    <a href="https://github.com/konstantinosnascos/tic-tac-toe" target="_blank" class="btn btn-primary">
+                        GitHub
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Love Letter – Konsolspel</h3>
+                <p>
+                    Individuellt Java‑projekt byggt för att fördjupa kunskaper i
+                    objektorienterad programmering och SOLID‑principer.
+                </p>
+                <p><strong>Teknik:</strong> Java</p>
+                <div class="hero-actions">
+                    <a href="https://github.com/konstantinosnascos/ConnectingClasses" target="_blank" class="btn btn-primary">
+                        GitHub
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Bokningssystem – Grupprojekt</h3>
+                <p>
+                    Första större grupprojektet. Konsolbaserat bokningssystem
+                    för en bilverkstad med fokus på samarbete och Git‑flöde.
+                </p>
+                <p><strong>Teknik:</strong> Java</p>
+                <div class="hero-actions">
+                    <a href="https://github.com/konstantinosnascos/Java_Grund_Kompetenskontroll_3_GitWorkflow_Malm02" target="_blank" class="btn btn-primary">
+                        GitHub
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Calculator App</h3>
+                <p>
+                    Enkel frontend‑applikation inspirerad av tidigare
+                    konsolbaserade Java‑kalkylatorer.
+                </p>
+                <p><strong>Teknik:</strong> HTML, CSS, JavaScript</p>
+                <div class="hero-actions">
+                    <a href="https://github.com/konstantinosnascos/CalculatorFE" target="_blank" class="btn btn-primary">
+                        GitHub
+                    </a>
+                </div>
+            </article>
+
         </div>
     </div>
 </section>
@@ -160,10 +195,9 @@
         <div class="contact-content">
             <p>Vill du komma i kontakt?</p>
             <div class="contact-links">
-                <a href="mailto:din@email.com" class="contact-link">Email</a>
-                <a href="https://linkedin.com" class="contact-link" target="_blank">LinkedIn</a>
+                <a href="mailto:nascoskostas@gmail.com" class="contact-link">Email</a>
+                <a href="https://www.linkedin.com/in/kostas-nascos-08228b382/" class="contact-link" target="_blank">LinkedIn</a>
                 <a href="https://github.com/konstantinosnascos" class="contact-link" target="_blank">GitHub</a>
-                <a href="https://chess.com/member/Kostas19900402" class="contact-link" target="_blank">Chess.com</a>
             </div>
         </div>
     </div>
