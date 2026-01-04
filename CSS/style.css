@@ -483,3 +483,37 @@ body {
         align-items: center;
     }
 }
+
+.project-card--expandable {
+    padding: var(--spacing-md);
+}
+
+.project-preview {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-tech {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-toggle {
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-details {
+    display: none;
+    margin-top: var(--spacing-sm);
+}
+
+.project-details p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+}
+
+.project-card--expanded .project-details {
+    display: block;
+}
