@@ -245,18 +245,19 @@
         </p>
 
         <div class="projects-grid">
-                <article class="project-card project-card--expandable">
+            <article class="project-card project-card--expandable">
 
-                <h3>E‑handelsplattform – Backend med Java & Spring Boot</h3>
+                <h3>E‑handelsplattform – Java & Spring Boot</h3>
 
                 <p class="project-preview">
-                    Backendfokuserad e‑handelsplattform med tydlig domänmodell,
-                    databasintegration och affärslogik.
-                    Grupparbete som vidareutvecklats individuellt.
+                    Fullstack‑orienterad e‑handelsapplikation med fokus på backendutveckling,
+                    arkitektur och datadriven design. Projektet påbörjades som en
+                    konsolapplikation och har därefter vidareutvecklats med ett webblager.
                 </p>
 
                 <p class="project-tech">
-                    <strong>Teknik:</strong> Java 21, Spring Boot, Spring Data JPA, PostgreSQL
+                    <strong>Teknik:</strong> Java 21, Spring Boot, Spring Data JPA,
+                    Spring MVC, Thymeleaf, PostgreSQL
                 </p>
 
                 <button class="project-toggle btn btn-secondary">
@@ -264,24 +265,45 @@
                 </button>
 
                 <div class="project-details">
-                    <p>
-                        Projektet påbörjades som ett grupparbete under databaskursen med fokus på
-                        datamodellering, relationer och integration mellan Java och databas.
-                    </p>
 
                     <p>
-                        Efter avslutat grupparbete har projektet vidareutvecklats individuellt(i branchen kostas)
-                        med inriktning på backendutveckling, systemdesign och långsiktigt hållbar kod.
+                        Projektet utvecklades ursprungligen som en skoluppgift med fokus på
+                        databasdesign, affärslogik och hantering av större datamängder.
+                        Därefter har applikationen vidareutvecklats individuellt som
+                        portföljprojekt inför LIA.
                     </p>
 
                     <p>
                         Applikationen är uppbyggd kring en tydlig domänmodell med produkter,
-                        kunder, kundvagn, order, betalningar, lager och kategorier.
+                        kunder, kundvagn, ordrar, betalningar, lager och kategorier.
+                        Affärslogik hanteras i ett separat service‑lager med transaktioner.
                     </p>
 
                     <p>
-                        En central del är hantering av dataflöden via CSV‑import för produkter,
-                        kunder, lager och ordrar – ett vanligt scenario i verkliga system.
+                        Ett webblager har lagts till med Spring MVC och Thymeleaf.
+                        Funktionalitet inkluderar produktlistor med pagination,
+                        kundhantering, kundvagn med mini‑cart i navbar,
+                        checkout‑flöde samt orderhistorik.
+                    </p>
+
+                    <p>
+                        Systemet använder databaserad rollhantering (RBAC).
+                        Åtkomst styrs i två lager:
+                        UI‑nivå (visa/dölj funktioner) och backend‑nivå
+                        där admin‑endpoints skyddas mot direkt URL‑åtkomst.
+                    </p>
+
+                    <p>
+                        För rapportering används separata DTO‑klasser för att undvika
+                        direkt exponering av domänentiteter.
+                        Tillgängliga rapporter inkluderar bästsäljande produkter,
+                        lågt lager och omsättning per tidsperiod.
+                    </p>
+
+                    <p>
+                        För att simulera realistiska scenarier finns stöd för CSV‑import
+                        av produkter, kunder och ordrar samt en data‑generator
+                        för större datamängder.
                     </p>
 
                     <div class="hero-actions">
@@ -291,6 +313,7 @@
                             GitHub
                         </a>
                     </div>
+
                 </div>
 
             </article>
