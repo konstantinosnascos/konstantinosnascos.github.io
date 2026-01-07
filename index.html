@@ -351,24 +351,6 @@
             </article>
 
             <article class="project-card">
-                <h3>Love Letter – Konsolspel</h3>
-                <p>
-                    Individuellt Java‑projekt med fokus på objektorienterad design och
-                    ansvar för hela kodbasen.
-                </p>
-                <p>
-                    Projektet användes för att tillämpa SOLID‑principer, datastrukturer
-                    och tydlig ansvarsfördelning mellan klasser i ett växande system.
-                </p>
-                <p><strong>Teknik:</strong> Java</p>
-                <div class="hero-actions">
-                    <a href="https://github.com/konstantinosnascos/ConnectingClasses" target="_blank" class="btn btn-primary">
-                        GitHub
-                    </a>
-                </div>
-            </article>
-
-            <article class="project-card">
                 <h3>Bokningssystem – Grupprojekt</h3>
                 <p>
                     Första större grupprojektet där fokus låg på samarbete, Git‑workflow
@@ -387,17 +369,20 @@
             </article>
 
             <article class="project-card">
-                <h3>Calculator App</h3>
-              <p>
-                Ett mindre frontendprojekt som byggdes för att överföra tidigare
-                logik från konsolapplikationer till ett webbaserat gränssnitt.
-            </p>
-            <p>
-                Fokus låg på tydlig logik, användarinteraktion och enkel men robust struktur.
-            </p>
-                <p><strong>Teknik:</strong> HTML, CSS, JavaScript</p>
+                <h3>BankTransfer – Transaktioner & Testning</h3>
+                <p>
+                    Java-applikation för banköverföringar med fokus på transaktionshantering,
+                    rollback och felhantering. Projektet är testdrivet och verifierar att
+                    databastransaktioner fungerar korrekt vid både lyckade och misslyckade överföringar.
+                </p>
+                <p>
+                    Loggning sker i en separat transaktion (REQUIRES_NEW) för att säkerställa
+                    att misslyckade överföringar alltid loggas, även vid rollback.
+                    Testerna körs mot en lokal PostgreSQL-databas.
+                </p>
+                <p><strong>Teknik:</strong> Java, Spring Boot, Spring Data JPA, PostgreSQL, JUnit</p>
                 <div class="hero-actions">
-                    <a href="https://github.com/konstantinosnascos/CalculatorFE" target="_blank" class="btn btn-primary">
+                    <a href="https://github.com/konstantinosnascos/Transactions" target="_blank" class="btn btn-primary">
                         GitHub
                     </a>
                 </div>
