@@ -192,6 +192,10 @@ body {
     color: var(--color-primary);
 }
 
+.nav-toggle.active .hamburger {
+    background-color: transparent;
+}
+
 /* ===== HERO ===== */
 .hero {
     padding-top: calc(var(--spacing-xl) + 60px); 
