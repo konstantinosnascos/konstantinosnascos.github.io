@@ -328,29 +328,104 @@
                 </div>
 
             </article>
-            <article class="project-card">
-                <h3>Game Portal – Chess & Tic‑Tac‑Toe</h3>
-                <p>
-                    Projektet fokuserar på arkitektur och vidareutveckling snarare än färdiga funktioner.
-                    Arbetet började med ett större problem (schack) som sedan bröts ner genom att först
-                    bygga ett mindre spel för att etablera struktur, spel‑logik och kommunikation.
+            <article class="project-card project-card--expandable">
+                <h3>Todo‑app – PWA med Vite & CI/CD</h3>
+
+                <p class="project-preview">
+                    Fullständig Todo‑applikation byggd som Progressive Web App med offline‑stöd,
+                    testdriven utveckling och automatiserad deploy via GitHub Actions.
                 </p>
-                <p>
-                    Fokus har legat på att bygga kod som är möjlig att återanvända och vidareutveckla,
-                    samt att förstå hur ett projekt växer över tid.
+
+                <p class="project-tech">
+                    <strong>Teknik:</strong> JavaScript, Vite, Vitest, Service Workers,
+                    Web App Manifest, GitHub Actions, GitHub Pages
                 </p>
-                <p><strong>Teknik:</strong> JavaScript, HTML, CSS, Node.js, Express, Socket.IO</p>
-                <div class="hero-actions">
-                    <a href="https://chess-app-jmlk.onrender.com" target="_blank" class="btn btn-primary">
-                        Live demo
-                    </a>
-                    <a href="https://github.com/konstantinosnascos/ChessApp" target="_blank" class="btn btn-secondary">
-                        Github
-                    </a>
+
+                <button class="project-toggle btn btn-secondary">
+                    Visa mer
+                </button>
+
+                <div class="project-details">
+                    <p>
+                        Appen är uppbyggd med en API‑adapter som väljer mellan en HTTP‑implementation
+                        (json‑server under utveckling) och en localStorage‑baserad mock‑implementation
+                        vid deploy – ingen backend krävs på GitHub Pages.
+                    </p>
+
+                    <p>
+                        Testning med Vitest täcker flera nivåer: unit tests för todo‑logik,
+                        API‑tester med mockad fetch inklusive felscenarier (500, nätverksfel),
+                        DOM‑tester med jsdom samt integrationstester för användarflöden.
+                    </p>
+
+                    <p>
+                        CI/CD‑pipeline med GitHub Actions kör lint, tester och build på varje PR.
+                        Branch protection kräver gröna checks innan merge.
+                        CD‑workflow bygger och deployar automatiskt till GitHub Pages.
+                    </p>
+
+                    <p>
+                        PWA‑funktionalitet inkluderar service worker med cache‑strategier,
+                        offline‑banner, robust felhantering med retries för misslyckade synkningar
+                        samt code splitting med dynamic imports för statistik‑ och inställningsvyer.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="https://github.com/konstantinosnascos/todo-vite" target="_blank" class="btn btn-primary">
+                            GitHub
+                        </a>
+                    </div>
                 </div>
-                <p style="margin-top:0.5rem;font-size:0.875rem;color:#64748b;">
-                    Demo kan ta upp till 2 minuter att starta.
+            </article>
+
+            <article class="project-card project-card--expandable">
+                <h3>Samlingsapp – PWA Grupprojekt</h3>
+
+                <p class="project-preview">
+                    PWA‑applikation byggd i grupp med data från externt API.
+                    Fokus på offline‑funktionalitet, tillgänglighet, responsiv design
+                    och gemensamt Git‑flöde med CI/CD.
                 </p>
+
+                <p class="project-tech">
+                    <strong>Teknik:</strong> HTML, CSS, JavaScript, Service Workers,
+                    Web App Manifest, GitHub Actions, GitHub Pages
+                </p>
+
+                <button class="project-toggle btn btn-secondary">
+                    Visa mer
+                </button>
+
+                <div class="project-details">
+                    <p>
+                        Appen hämtar data från ett externt API och presenterar det i en
+                        listvy med sök/filtrering och detaljsidor. Användaren kan spara
+                        favoriter som fungerar även offline via lokal lagring.
+                    </p>
+
+                    <p>
+                        Service worker cachar app shell och API‑svar med tydliga
+                        cache‑strategier. Offline‑läge visar cachad data med feedback
+                        till användaren om begränsad funktionalitet.
+                    </p>
+
+                    <p>
+                        Tillgänglighet har varit centralt: semantisk HTML, tangentbordsnavigering,
+                        tillräcklig kontrast och ARIA där det behövs. Testat med axe mot
+                        90+ i Accessibility.
+                    </p>
+
+                    <p>
+                        Samarbete med branch protection, required checks och gemensam
+                        planering. CI/CD‑pipeline deployar automatiskt till GitHub Pages.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="https://github.com/jonatandahl05/Gruppuppgift_Frontend" target="_blank" class="btn btn-primary">
+                            GitHub
+                        </a>
+                    </div>
+                </div>
             </article>
 
             <article class="project-card">
@@ -391,6 +466,42 @@
                 </div>
             </article>
 
+        </div>
+    </div>
+</section>
+
+<section class="section projects">
+    <div class="container">
+        <h2 class="section-title">Sidoprojekt</h2>
+        <p class="section-subtitle">
+            Projekt byggda på egen tid för nöjes skull
+        </p>
+
+        <div class="projects-grid">
+            <article class="project-card">
+                <h3>Game Portal – Chess & Tic‑Tac‑Toe</h3>
+                <p>
+                    Projektet fokuserar på arkitektur och vidareutveckling snarare än färdiga funktioner.
+                    Arbetet började med ett större problem (schack) som sedan bröts ner genom att först
+                    bygga ett mindre spel för att etablera struktur, spel‑logik och kommunikation.
+                </p>
+                <p>
+                    Fokus har legat på att bygga kod som är möjlig att återanvända och vidareutveckla,
+                    samt att förstå hur ett projekt växer över tid.
+                </p>
+                <p><strong>Teknik:</strong> JavaScript, HTML, CSS, Node.js, Express, Socket.IO</p>
+                <div class="hero-actions">
+                    <a href="https://chess-app-jmlk.onrender.com" target="_blank" class="btn btn-primary">
+                        Live demo
+                    </a>
+                    <a href="https://github.com/konstantinosnascos/ChessApp" target="_blank" class="btn btn-secondary">
+                        GitHub
+                    </a>
+                </div>
+                <p style="margin-top:0.5rem;font-size:0.875rem;color:#64748b;">
+                    Demo kan ta upp till 2 minuter att starta.
+                </p>
+            </article>
         </div>
     </div>
 </section>

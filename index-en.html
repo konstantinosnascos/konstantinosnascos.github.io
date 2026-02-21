@@ -319,8 +319,8 @@
 
                     <div class="hero-actions">
                         <a href="https://github.com/konstantinosnascos/ehandelappmedspringochdb"
-                        target="_blank"
-                        class="btn btn-primary">
+                           target="_blank"
+                           class="btn btn-primary">
                             GitHub
                         </a>
                     </div>
@@ -328,29 +328,113 @@
                 </div>
 
             </article>
-            <article class="project-card">
-                <h3>Game Portal – Chess & Tic-Tac-Toe</h3>
-                <p>
-                    The project focuses on architecture and further development rather than finished features.
-                    Work started with a larger problem (chess) which was then broken down by first
-                    building a smaller game to establish structure, game logic and communication.
+
+            <article class="project-card project-card--expandable">
+
+                <h3>Todo App – PWA with Vite & CI/CD</h3>
+
+                <p class="project-preview">
+                    Complete Todo application built as a Progressive Web App with offline support,
+                    test-driven development and automated deploy via GitHub Actions.
                 </p>
-                <p>
-                    Focus has been on building code that is possible to reuse and further develop,
-                    as well as understanding how a project grows over time.
+
+                <p class="project-tech">
+                    <strong>Tech:</strong> JavaScript, Vite, Vitest, Service Workers,
+                    Web App Manifest, GitHub Actions, GitHub Pages
                 </p>
-                <p><strong>Tech:</strong> JavaScript, HTML, CSS, Node.js, Express, Socket.IO</p>
-                <div class="hero-actions">
-                    <a href="https://chess-app-jmlk.onrender.com" target="_blank" class="btn btn-primary">
-                        Live demo
-                    </a>
-                    <a href="https://github.com/konstantinosnascos/ChessApp" target="_blank" class="btn btn-secondary">
-                        Github
-                    </a>
+
+                <button class="project-toggle btn btn-secondary">
+                    Show more
+                </button>
+
+                <div class="project-details">
+
+                    <p>
+                        The app is built with an API adapter that selects between an HTTP implementation
+                        (json-server during development) and a localStorage-based mock implementation
+                        for deploy – no backend required on GitHub Pages.
+                    </p>
+
+                    <p>
+                        Testing with Vitest covers multiple levels: unit tests for todo logic,
+                        API tests with mocked fetch including error scenarios (500, network errors),
+                        DOM tests with jsdom and integration tests for user flows.
+                    </p>
+
+                    <p>
+                        CI/CD pipeline with GitHub Actions runs lint, tests and build on every PR.
+                        Branch protection requires green checks before merge.
+                        CD workflow builds and deploys automatically to GitHub Pages.
+                    </p>
+
+                    <p>
+                        PWA functionality includes service worker with caching strategies,
+                        offline banner, robust error handling with retries for failed syncs
+                        and code splitting with dynamic imports for statistics and settings views.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="https://github.com/konstantinosnascos/todo-vite" target="_blank" class="btn btn-primary">
+                            GitHub
+                        </a>
+                    </div>
+
                 </div>
-                <p style="margin-top:0.5rem;font-size:0.875rem;color:#64748b;">
-                    Demo may take up to 2 minutes to start.
+
+            </article>
+
+            <article class="project-card project-card--expandable">
+
+                <h3>Collection App – PWA Group Project</h3>
+
+                <p class="project-preview">
+                    PWA application built in a team using data from an external API.
+                    Focus on offline functionality, accessibility, responsive design
+                    and shared Git workflow with CI/CD.
                 </p>
+
+                <p class="project-tech">
+                    <strong>Tech:</strong> HTML, CSS, JavaScript, Service Workers,
+                    Web App Manifest, GitHub Actions, GitHub Pages
+                </p>
+
+                <button class="project-toggle btn btn-secondary">
+                    Show more
+                </button>
+
+                <div class="project-details">
+
+                    <p>
+                        The app fetches data from an external API and presents it in a
+                        list view with search/filtering and detail pages. Users can save
+                        favorites that work offline via local storage.
+                    </p>
+
+                    <p>
+                        Service worker caches app shell and API responses with clear
+                        caching strategies. Offline mode displays cached data with feedback
+                        to the user about limited functionality.
+                    </p>
+
+                    <p>
+                        Accessibility has been central: semantic HTML, keyboard navigation,
+                        sufficient contrast and ARIA where needed. Tested with axe targeting
+                        90+ in Accessibility.
+                    </p>
+
+                    <p>
+                        Collaboration with branch protection, required checks and shared
+                        planning. CI/CD pipeline deploys automatically to GitHub Pages.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="https://github.com/jonatandahl05/Gruppuppgift_Frontend" target="_blank" class="btn btn-primary">
+                            GitHub
+                        </a>
+                    </div>
+
+                </div>
+
             </article>
 
             <article class="project-card">
@@ -391,6 +475,42 @@
                 </div>
             </article>
 
+        </div>
+    </div>
+</section>
+
+<section class="section projects">
+    <div class="container">
+        <h2 class="section-title">Side Projects</h2>
+        <p class="section-subtitle">
+            Projects built in my free time for fun
+        </p>
+
+        <div class="projects-grid">
+            <article class="project-card">
+                <h3>Game Portal – Chess & Tic-Tac-Toe</h3>
+                <p>
+                    The project focuses on architecture and further development rather than finished features.
+                    Work started with a larger problem (chess) which was then broken down by first
+                    building a smaller game to establish structure, game logic and communication.
+                </p>
+                <p>
+                    Focus has been on building code that is possible to reuse and further develop,
+                    as well as understanding how a project grows over time.
+                </p>
+                <p><strong>Tech:</strong> JavaScript, HTML, CSS, Node.js, Express, Socket.IO</p>
+                <div class="hero-actions">
+                    <a href="https://chess-app-jmlk.onrender.com" target="_blank" class="btn btn-primary">
+                        Live demo
+                    </a>
+                    <a href="https://github.com/konstantinosnascos/ChessApp" target="_blank" class="btn btn-secondary">
+                        GitHub
+                    </a>
+                </div>
+                <p style="margin-top:0.5rem;font-size:0.875rem;color:#64748b;">
+                    Demo may take up to 2 minutes to start.
+                </p>
+            </article>
         </div>
     </div>
 </section>
