@@ -449,7 +449,16 @@ body {
     text-align: center;
 }
 
+.contact-content-mini {
+    text-align: left;
+}
+
 .contact-content > p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-content-mini > p {
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: var(--spacing-md);
 }
